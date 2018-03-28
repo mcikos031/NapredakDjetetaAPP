@@ -7,14 +7,19 @@ package napredakDjeteta.model;
 
 import com.sun.glass.ui.View;
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  *
  * @author Polaznik
  */
-
+@Entity
+@Table
 public class Profesor extends Osoba implements Serializable {
  
+    private String email;
+    
     public Profesor(){
     super();
     }

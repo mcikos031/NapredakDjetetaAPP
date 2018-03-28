@@ -5,18 +5,18 @@
  */
 package napredakDjeteta.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import java.io.Serializable;
+
+
 
 /**
  *
  * @author Polaznik
  */
-
-@Entity
-@Table
-public class Dijete extends Osoba {
+public class Grupa extends Entitet implements Serializable {
     
+    private String naziv;
+    private int brojDjece;
     
     
     

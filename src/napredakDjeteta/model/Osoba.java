@@ -14,11 +14,9 @@ import javax.persistence.MappedSuperclass;
  * @author Polaznik
  */
 @MappedSuperclass
-public abstract class Osoba {
+public abstract class Osoba extends Entitet {
 
-    @Id
-    @GeneratedValue
-    private int sifra = 0;
+
 
     private String oib;
     private String ime;
@@ -32,14 +30,6 @@ public abstract class Osoba {
     public Osoba(String ime, String prezime) {
         this.ime = ime;
         this.prezime = prezime;
-    }
-
-    public int getSifra() {
-        return sifra;
-    }
-
-    public void setSifra(int sifra) {
-        this.sifra = sifra;
     }
 
     public String getOib() {
