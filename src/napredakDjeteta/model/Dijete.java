@@ -5,22 +5,13 @@
  */
 package napredakDjeteta.model;
 
-import com.sun.glass.ui.View;
-import java.io.Serializable;
-
 /**
  *
  * @author Polaznik
  */
-
-public class Profesor extends Osoba implements Serializable {
- 
-    public Profesor(){
-    super();
-    }
+public class Dijete extends Osoba {
     
-    public Profesor(String ime, String prezime){
-        super(ime,prezime);
-    }
+    private String ime;
+    
     
 }
