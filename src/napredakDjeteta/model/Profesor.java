@@ -17,8 +17,6 @@ import javax.persistence.Table;
 @Entity
 @Table
 public class Profesor extends Osoba implements Serializable {
- 
-    private String email;
     
     public Profesor(){
     super();

@@ -7,6 +7,8 @@ package napredakDjeteta;
 
 ;
 
+import napredakDjeteta.pomocno.HibernateUtil;
+
 
 /**
  *
@@ -18,7 +20,8 @@ public class Start {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        HibernateUtil.getSession();
+     
         
         
         //

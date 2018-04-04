@@ -5,6 +5,7 @@
  */
 package napredakDjeteta.model;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -12,12 +13,20 @@ import javax.persistence.Table;
  *
  * @author Polaznik
  */
-
 @Entity
 @Table
-public class Dijete extends Osoba {
+public class Dijete extends Osoba implements Serializable {
+
     
+
+    public Dijete() {
+        super();
+    }
+
+    public Dijete(String ime, String prezime) {
+        super(ime, prezime);
+    }
+
     
-    
-    
+
 }
