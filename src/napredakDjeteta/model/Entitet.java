@@ -15,22 +15,13 @@ import javax.persistence.MappedSuperclass;
  */
 @MappedSuperclass
 public abstract class Entitet {
-    
+
     @Id
     @GeneratedValue
-    
+
     private int sifra;
-    
-    private boolean obrisano =false;
 
-    public boolean isObrisano() {
-        return obrisano;
-    }
-
-    public void setObrisano(boolean obrisano) {
-        this.obrisano = obrisano;
-    }
-    
+    private boolean obrisano = false;
 
     public int getSifra() {
         return sifra;
@@ -40,7 +31,12 @@ public abstract class Entitet {
         this.sifra = sifra;
     }
 
-    
-    
-    
+    public boolean isObrisano() {
+        return obrisano;
+    }
+
+    public void setObrisano(boolean obrisano) {
+        this.obrisano = obrisano;
+    }
+
 }
